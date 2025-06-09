@@ -1,0 +1,278 @@
+[
+  {
+    "id": "m001",
+    "testimonials": [
+      {
+        "stars": 5,
+        "heading": "Super Comfortable & Stylish",
+        "text": "This t-shirt fits perfectly and feels premium. The print hasn't faded even after multiple washes!",
+        "fullname": "Rahul Mehta",
+        "product_name": "Men's 100% Cotton 220 GSM Graphic Print Oversized Fit Round Neck T-Shirt",
+        "price": 25.99,
+        "compare_price": 39.99
+      },
+      {
+        "stars": 4,
+        "heading": "Great Buy for Summer",
+        "text": "Breathable material and true to size. Perfect for daily wear.",
+        "fullname": "Amit Shah",
+        "product_name": "Men's 100% Cotton 220 GSM Graphic Print Oversized Fit Round Neck T-Shirt",
+        "price": 25.99,
+        "compare_price": 39.99
+      }
+    ]
+  },
+  {
+    "id": "m002",
+    "testimonials": [
+      {
+        "stars": 5,
+        "heading": "Love the NASA Design",
+        "text": "As a space enthusiast, I loved the graphic and the comfy fit!",
+        "fullname": "Kunal Desai",
+        "product_name": "NASA Merchandise Men's 100% Cotton 220 GSM Graphic Print Oversized Fit Round Neck T-Shirt",
+        "price": 29.99,
+        "compare_price": 39.99
+      },
+      {
+        "stars": 4,
+        "heading": "Stylish and Durable",
+        "text": "I’ve worn this several times. It's well-stitched and holds color well.",
+        "fullname": "Siddharth Kapoor",
+        "product_name": "NASA Merchandise Men's 100% Cotton 220 GSM Graphic Print Oversized Fit Round Neck T-Shirt",
+        "price": 29.99,
+        "compare_price": 39.99
+      }
+    ]
+  },
+  {
+    "id": "m003",
+    "testimonials": [
+      {
+        "stars": 4,
+        "heading": "Batman's Fan Must Buy",
+        "text": "Awesome design and very comfortable. Pairs well with joggers.",
+        "fullname": "Vikrant Joshi",
+        "product_name": "Men's Cotton Oversized Fit T-Shirt",
+        "price": 24.99,
+        "compare_price": 29.99
+      },
+      {
+        "stars": 5,
+        "heading": "Soft & Lightweight",
+        "text": "Love the feel of the fabric. Definitely recommend for casual outings.",
+        "fullname": "Manish Rawat",
+        "product_name": "Men's Cotton Oversized Fit T-Shirt",
+        "price": 24.99,
+        "compare_price": 29.99
+      }
+    ]
+  },
+  {
+    "id": "m004",
+    "testimonials": [
+      {
+        "stars": 5,
+        "heading": "Marvel Fan Approved!",
+        "text": "Amazing t-shirt with great Marvel design. My favorite tee now.",
+        "fullname": "Aayush Patel",
+        "product_name": "Men's Graphic Printed 100% Cotton T-Shirt - Oversized Fit, Round Neck, Half Sleeves",
+        "price": 19.99,
+        "compare_price": 29.99
+      },
+      {
+        "stars": 4,
+        "heading": "Good Quality for Price",
+        "text": "Bought during sale, totally worth it. Quality exceeded my expectations.",
+        "fullname": "Neeraj Tiwari",
+        "product_name": "Men's Graphic Printed 100% Cotton T-Shirt - Oversized Fit, Round Neck, Half Sleeves",
+        "price": 19.99,
+        "compare_price": 29.99
+      }
+    ]
+  },
+  {
+    "id": "w001",
+    "testimonials": [
+      {
+        "stars": 5,
+        "heading": "Elegant and Comfortable",
+        "text": "Wore it for a family function and got so many compliments!",
+        "fullname": "Priya Sharma",
+        "product_name": "Women's Rayon Viscose Anarkali Printed Kurta with Palazzo & Dupatta",
+        "price": 39.99,
+        "compare_price": 59.99
+      },
+      {
+        "stars": 4,
+        "heading": "Good Fabric Quality",
+        "text": "Loved the soft material and fit. Would buy again in another color.",
+        "fullname": "Sunita Reddy",
+        "product_name": "Women's Rayon Viscose Anarkali Printed Kurta with Palazzo & Dupatta",
+        "price": 39.99,
+        "compare_price": 59.99
+      }
+    ]
+  },
+  {
+    "id": "w002",
+    "testimonials": [
+      {
+        "stars": 5,
+        "heading": "Perfect for Office Wear",
+        "text": "Looks classy and is very comfortable to wear all day.",
+        "fullname": "Neha Verma",
+        "product_name": "Women's Rayon Viscose Anarkali Printed Kurta with Palazzo & Dupatta",
+        "price": 39.99,
+        "compare_price": 59.99
+      },
+      {
+        "stars": 4,
+        "heading": "Elegant Design",
+        "text": "Good value for money and beautiful prints.",
+        "fullname": "Ritika Gupta",
+        "product_name": "Women's Rayon Viscose Anarkali Printed Kurta with Palazzo & Dupatta",
+        "price": 39.99,
+        "compare_price": 59.99
+      }
+    ]
+  },
+  {
+    "id": "w003",
+    "testimonials": [
+      {
+        "stars": 5,
+        "heading": "Graceful and Stunning",
+        "text": "Loved the color and fabric. Feels premium and fits great.",
+        "fullname": "Ananya Singh",
+        "product_name": "Women's Rayon Viscose Anarkali Printed Kurta with Palazzo & Dupatta",
+        "price": 69.99,
+        "compare_price": 99.99
+      },
+      {
+        "stars": 5,
+        "heading": "Chic and Comfortable",
+        "text": "Very light and airy. Ideal for summers!",
+        "fullname": "Tanya Mehra",
+        "product_name": "Women's Rayon Viscose Anarkali Printed Kurta with Palazzo & Dupatta",
+        "price": 69.99,
+        "compare_price": 99.99
+      }
+    ]
+  },
+  {
+    "id": "k001",
+    "testimonials": [
+      {
+        "stars": 4,
+        "heading": "Cute and Comfy",
+        "text": "Perfect summer wear for my kid. He loves it!",
+        "fullname": "Meena Chauhan",
+        "product_name": "Cotton Co-ord Sets for Boys – Soft and Comfortable Summer Wear",
+        "price": 19.99,
+        "compare_price": 29.99
+      },
+      {
+        "stars": 5,
+        "heading": "Great Quality for Kids",
+        "text": "Fabric is soft and print is child-friendly. Will buy more.",
+        "fullname": "Rohit Bansal",
+        "product_name": "Cotton Co-ord Sets for Boys – Soft and Comfortable Summer Wear",
+        "price": 19.99,
+        "compare_price": 29.99
+      }
+    ]
+  },
+  {
+    "id": "k002",
+    "testimonials": [
+      {
+        "stars": 5,
+        "heading": "Kids Loved the Characters!",
+        "text": "My son adores the Mickey print. The fabric is gentle on his skin.",
+        "fullname": "Sneha Arora",
+        "product_name": "Mickey cotton Kids Coords matching Tshirt and pant set with character print",
+        "price": 19.99,
+        "compare_price": 29.99
+      },
+      {
+        "stars": 4,
+        "heading": "Great for Playtime",
+        "text": "Stretchy and fun! Easy to wash and doesn't shrink.",
+        "fullname": "Aditya Deshmukh",
+        "product_name": "Mickey cotton Kids Coords matching Tshirt and pant set with character print",
+        "price": 19.99,
+        "compare_price": 29.99
+      }
+    ]
+  },
+  {
+    "id": "s001",
+    "testimonials": [
+      {
+        "stars": 5,
+        "heading": "Stylish and Lightweight",
+        "text": "Love the design! They go well with all my outfits.",
+        "fullname": "Arjun Sinha",
+        "product_name": "VINCENT CHASE EYEWEAR | Full Rim Round Sunglasses| Polarized And 100% UV Protected | Men & Women",
+        "price": 22.99,
+        "compare_price": 29.99
+      },
+      {
+        "stars": 4,
+        "heading": "Affordable & Classy",
+        "text": "Good quality lenses and comfortable to wear for long hours.",
+        "fullname": "Ritesh Goyal",
+        "product_name": "VINCENT CHASE EYEWEAR | Full Rim Round Sunglasses| Polarized And 100% UV Protected | Men & Women",
+        "price": 22.99,
+        "compare_price": 29.99
+      }
+    ]
+  },
+  {
+    "id": "s002",
+    "testimonials": [
+      {
+        "stars": 5,
+        "heading": "Premium Look",
+        "text": "Feels luxurious and protects well from sunlight.",
+        "fullname": "Simran Kaur",
+        "product_name": "100% UV protected sunglasses | Gradient | Medium | Full rim | Women | Cat Eye | Frame: Brown | Lens: Brown",
+        "price": 99.99,
+        "compare_price": 129.99
+      },
+      {
+        "stars": 4,
+        "heading": "Chic and Stylish",
+        "text": "Loved the cat eye frame. Very flattering shape.",
+        "fullname": "Richa Sethi",
+        "product_name": "100% UV protected sunglasses | Gradient | Medium | Full rim | Women | Cat Eye | Frame: Brown | Lens: Brown",
+        "price": 99.99,
+        "compare_price": 129.99
+      }
+    ]
+  },
+  {
+    "id": "b001",
+    "testimonials": [
+      {
+        "stars": 5,
+        "heading": "Spacious & Trendy",
+        "text": "I carry it daily to work and it fits everything I need!",
+        "fullname": "Ankita Bhatt",
+        "product_name": "Embossed design PU Leather hand bag for women",
+        "price": 22.99,
+        "compare_price": 29.99
+      },
+      {
+        "stars": 4,
+        "heading": "Nice Texture",
+        "text": "Looks more expensive than it is. Happy with the purchase.",
+        "fullname": "Divya Naik",
+        "product_name": "Embossed design PU Leather hand bag for women",
+        "price": 22.99,
+        "compare_price": 29.99
+      }
+    ]
+  }
+]

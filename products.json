@@ -1,0 +1,278 @@
+[
+  {
+    "id": "m001",
+    "title": "Men's 100% Cotton 220 GSM Graphic Print Oversized Fit Round Neck T-Shirt",
+    "description": "Keep calm and let your dreams reach for the stars with this Dream Graphic Printed Men's Black Oversized T-shirt. Style it with baggy trousers and sleek loafers for a smart look.",
+    "color": false,
+    "size": ["S", "M", "L", "XL", "2XL", "3XL"],
+    "price": 25.99,
+    "compare_price": 39.99,
+    "category": "men",
+    "wishlist": false,
+    "newarrivals": true,
+    "bestseller": true,
+    "related_products": ["m002", "m003", "m004"],
+    "images": [
+      "images/products/men/m001_1.jpg",
+      "images/products/men/m001_2.jpg",
+      "images/products/men/m001_3.jpg",
+      "images/products/men/m001_4.jpg"
+    ]
+  },
+  {
+    "id": "m002",
+    "title": "NASA Merchandise Men's 100% Cotton 220 GSM Graphic Print Oversized Fit Round Neck T-Shirt",
+    "description": "Join the ranks of the coolest space guardians with this Explorer NASA Men's Oversized T-Shirt. Club this Official NASA black t-shirt with joggers and sliders for a lounge-perfect look.",
+    "color": false,
+    "size": ["S", "M", "L", "XL", "2XL", "3XL"],
+    "price": 29.99,
+    "compare_price": 39.99,
+    "category": "men",
+    "wishlist": false,
+    "newarrivals": false,
+    "bestseller": false,
+    "related_products": ["m001", "m003", "m004"],
+    "images": [
+      "images/products/men/m002_1.jpg",
+      "images/products/men/m002_2.jpg",
+      "images/products/men/m002_3.jpg",
+      "images/products/men/m002_4.jpg"
+    ]
+  },
+  {
+    "id": "m003",
+    "title": "Men's Cotton Oversized Fit T-Shirt",
+    "description": "We all have that one superhero we resonate with. If Batman is yours, this The Batman Men's Black Oversized T-Shirt is for you. Team this Official DC t-shirt with with cargo trousers and sneakers for a street-style look.",
+    "color": false,
+    "size": ["S", "M", "L", "XL", "2XL", "3XL"],
+    "price": 24.99,
+    "compare_price": 29.99,
+    "category": "men",
+    "wishlist": false,
+    "newarrivals": false,
+    "bestseller": false,
+    "related_products": ["m002", "m001", "m004"],
+    "images": [
+      "images/products/men/m003_1.jpg",
+      "images/products/men/m003_2.jpg",
+      "images/products/men/m003_3.jpg",
+      "images/products/men/m003_4.jpg"
+    ]
+  },
+  {
+    "id": "m004",
+    "title": "Men's Graphic Printed 100% Cotton T-Shirt - Oversized Fit, Round Neck, Half Sleeves",
+    "description": "With this Spider Sense Graphic Printed Men's Brown Oversized T-shirt, you'll feel like a web-slinging hero. Wear this Official Marvel t-shirt with dark jeans and action-ready sneakers for a look that's adventurous and fun.",
+    "color": false,
+    "size": ["M", "L", "XL", "2XL", "3XL"],
+    "price": 19.99,
+    "compare_price": 29.99,
+    "category": "men",
+    "wishlist": false,
+    "newarrivals": false,
+    "bestseller": true,
+    "related_products": ["m002", "m003", "m001"],
+    "images": [
+      "images/products/men/m004_1.jpg",
+      "images/products/men/m004_2.jpg",
+      "images/products/men/m004_3.jpg",
+      "images/products/men/m004_4.jpg"
+    ]
+  },
+  {
+    "id": "w001",
+    "title": "Women's Rayon Viscose Anarkali Printed Kurta with Palazzo & Dupatta",
+    "description": "Have a Variety of Kurta Set in Your Collection to Accommodate Changing Weather Conditions Western Wear, Party Wear, Birthday Wear, Outdoor Wear, Summer Special Western Wear, Beach,This Kurta Set Gives You a Comfortable and Soft Feel, So You Can Wear It All Day Long. the Pants Are Constructed with the Trending Style and the Top Offers You Crop Top Casual Look. This Kurta Set Is a Best Buy for Your Collection, Which Is an Ultimate Go-To Statement Attire for Day to Day Look This Ethnic Kurta Set for Women Has a Color Neckline and Is a Perfect Option to Go for This Season, His kurta & Bottom for Women Comes with Regular Fit, Crafted with Attention to Detail, This Office Wear Kurta Set for Women Features a Beautifully Tailored Kurta with a Straight Silhouette. Whether You're Looking for a Casual Kurta Set for Your Everyday Wear or a Chic and Simple Kurta Set for Women, Our Collection Offers a Wide Range of Options Suitable for Various Occasions He Pants Are Constructed with the Trending Style and the Kurta Offers You Crop Top Casual Look. This Ethnic Kurti-Pant Set Is a Best Buy for Your Collection, Which Is an Ultimate Go-To Statement Attire for Day to Day Look.",
+    "color": false,
+    "size": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+    "price": 39.99,
+    "compare_price": 59.99,
+    "category": "women",
+    "wishlist": false,
+    "newarrivals": false,
+    "bestseller": true,
+    "related_products": ["w002", "w003"],
+    "images": [
+      "images/products/women/w001_1.jpg",
+      "images/products/women/w001_2.jpg",
+      "images/products/women/w001_3.jpg",
+      "images/products/women/w001_4.jpg",
+      "images/products/women/w001_5.jpg"
+    ]
+  },
+  {
+    "id": "w002",
+    "title": "Women's Rayon Viscose Anarkali Printed Kurta with Palazzo & Dupatta",
+    "description": "Have a Variety of Kurta Set in Your Collection to Accommodate Changing Weather Conditions Western Wear, Party Wear, Birthday Wear, Outdoor Wear, Summer Special Western Wear, Beach,This Kurta Set Gives You a Comfortable and Soft Feel, So You Can Wear It All Day Long. the Pants Are Constructed with the Trending Style and the Top Offers You Crop Top Casual Look. This Kurta Set Is a Best Buy for Your Collection, Which Is an Ultimate Go-To Statement Attire for Day to Day Look This Ethnic Kurta Set for Women Has a Color Neckline and Is a Perfect Option to Go for This Season, His kurta & Bottom for Women Comes with Regular Fit, Crafted with Attention to Detail, This Office Wear Kurta Set for Women Features a Beautifully Tailored Kurta with a Straight Silhouette. Whether You're Looking for a Casual Kurta Set for Your Everyday Wear or a Chic and Simple Kurta Set for Women, Our Collection Offers a Wide Range of Options Suitable for Various Occasions He Pants Are Constructed with the Trending Style and the Kurta Offers You Crop Top Casual Look. This Ethnic Kurti-Pant Set Is a Best Buy for Your Collection, Which Is an Ultimate Go-To Statement Attire for Day to Day Look.",
+    "color": ["green", "black", "white"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+    "price": 39.99,
+    "compare_price": 59.99,
+    "category": "women",
+    "wishlist": false,
+    "newarrivals": false,
+    "bestseller": true,
+    "related_products": ["w001", "w003"],
+    "images": [
+      "images/products/women/w002_1.jpg",
+      "images/products/women/w002_2.jpg",
+      "images/products/women/w002_3.jpg",
+      "images/products/women/w002_4.jpg"
+    ]
+  },
+  {
+    "id": "w003",
+    "title": "Women's Rayon Viscose Anarkali Printed Kurta with Palazzo & Dupatta",
+    "description": "Unique Designs: Party Wear saree is hand-printed, making it unique with slight variations that add to its charm. Friendly: The traditional process often uses natural dyes and sustaiable methods.",
+    "color": ["Magenta", "Pink", "Black", "White"],
+    "size": false,
+    "price": 69.99,
+    "compare_price": 99.99,
+    "category": "women",
+    "wishlist": false,
+    "newarrivals": true,
+    "bestseller": false,
+    "related_products": ["w002", "w001"],
+    "images": [
+      "images/products/women/w003_1.jpg",
+      "images/products/women/w003_2.jpg",
+      "images/products/women/w003_3.jpg",
+      "images/products/women/w003_4.jpg"
+    ]
+  },
+  {
+    "id": "k001",
+    "title": "Cotton Co-ord Sets for Boys – Soft and Comfortable Summer Wear",
+    "description": "Cute Meets Comfortable – Perfect Co-ord Sets for Little Champs!",
+    "color": ["orange", "red", "Blue"],
+    "size": ["7-8 Year", "8-9 Year", "10-11 Year", "12-13 Year", "14-15 Year"],
+    "price": 19.99,
+    "compare_price": 29.99,
+    "category": "kids",
+    "wishlist": false,
+    "newarrivals": false,
+    "bestseller": false,
+    "related_products": ["k002"],
+    "images": [
+      "images/products/kids/k001_1.jpg",
+      "images/products/kids/k001_2.jpg",
+      "images/products/kids/k001_3.jpg",
+      "images/products/kids/k001_4.jpg",
+      "images/products/kids/k001_5.jpg",
+      "images/products/kids/k001_6.jpg",
+      "images/products/kids/k001_7.jpg"
+    ]
+  },
+  {
+    "id": "k002",
+    "title": "Mickey cotton Kids Coords matching Tshirt and pant set with character print",
+    "description": "Introducing the Coordinated Sweatshirt and Pants Set for Kids by MiniCult! This delightful ensemble combines comfort, style, and the magic of beloved Star Wars, Disney, Marvel, Avengers, Mini Marvel Heroes, and Lion King characters for your little ones. Crafted with care from high-quality cotton fabric, this set offers a soft and cozy feel against your child's skin, ensuring all-day comfort for indoor and outdoor adventures. Featuring captivating prints, the set showcases beloved characters including Mickey Mouse, Minnie Mouse, Donald Duck, Spider-Man, Hulk, Thor, Iron Man, Captain America, and Lion King characters, adding fun and excitement to the ensemble. With vibrant colors like red, yellow, pink, light blue, and navy, your child can express their individual style while embracing their favorite characters' magic. The sweatshirt features a classic design with long sleeves, ribbed cuffs, and a cozy crew neckline, providing warmth and freedom of movement for playtime and exploration. The pants are designed with an elastic waistband for a comfortable and secure fit, allowing unrestricted movement for running, jumping, and relaxation. This set not only offers comfort and style but also sparks your child's imagination, allowing them to bring their favorite Disney, Marvel, Avengers, Mini Marvel Heroes, and Lion King stories to life. Give your child the gift of joy and inspiration with the Coordinated Sweatshirt and Pants Set for Kids by MiniCult. Order now and watch their eyes light up with excitement every time they wear this enchanting ensemble!",
+    "color": ["red", "yellow", "Blue"],
+    "size": [
+      "0-3 Months",
+      "3-6 Months",
+      "6-9 Months",
+      "9-12 Months",
+      "12-15 Months",
+      "15-18 Months"
+    ],
+    "price": 19.99,
+    "compare_price": 29.99,
+    "category": "kids",
+    "wishlist": false,
+    "newarrivals": true,
+    "bestseller": true,
+    "related_products": ["k001"],
+    "images": [
+      "images/products/kids/k002_1.jpg",
+      "images/products/kids/k002_2.jpg",
+      "images/products/kids/k002_3.jpg",
+      "images/products/kids/k002_4.jpg",
+      "images/products/kids/k002_5.jpg"
+    ]
+  },
+  {
+    "id": "s001",
+    "title": "VINCENT CHASE EYEWEAR | Full Rim Round Sunglasses| Polarized And 100% UV Protected | Men & Women",
+    "description": "Vincent Chase offers eyewear that are trendy while being easy on your pocket.",
+    "color": ["gold", "grey"],
+    "size": false,
+    "price": 22.99,
+    "compare_price": 29.99,
+    "category": "sunglasses",
+    "wishlist": false,
+    "newarrivals": false,
+    "bestseller": true,
+    "related_products": ["s002"],
+    "images": [
+      "images/products/sunglasses/s001_1.jpg",
+      "images/products/sunglasses/s001_2.jpg",
+      "images/products/sunglasses/s001_3.jpg",
+      "images/products/sunglasses/s001_4.jpg"
+    ]
+  },
+  {
+    "id": "s002",
+    "title": "100% UV protected sunglasses | Gradient | Medium | Full rim | Women | Cat Eye | Frame: Brown | Lens: Brown",
+    "description": "100% UV protected Gradient Full rim Cat Eye shaped sunglasses for Women with Havana Metal frame and Brown Gradient colored lens",
+    "color": ["brown"],
+    "size": ["M"],
+    "price": 99.99,
+    "compare_price": 129.99,
+    "category": "sunglasses",
+    "wishlist": false,
+    "newarrivals": true,
+    "bestseller": false,
+    "related_products": ["s001"],
+    "images": [
+      "images/products/sunglasses/s002_1.jpg",
+      "images/products/sunglasses/s002_2.jpg",
+      "images/products/sunglasses/s002_3.jpg",
+      "images/products/sunglasses/s002_4.jpg"
+    ]
+  },
+  {
+    "id": "b001",
+    "title": "Embossed design PU Leather hand bag for women",
+    "description": "We are more than just a brand - we are the epitome of style, sophistication, and luxury in the world of women's bags. Specializing in an exquisite range of handbags, sling bags, clutches, and bridal bags, we redefine fashion by offering a seamless fusion of creativity, craftsmanship, and functionality.This dedication to quality ensures that each bag not only looks exquisite but also stands the test of time.",
+    "color": ["grey", "beige", "green"],
+    "size": false,
+    "price": 22.99,
+    "compare_price": 29.99,
+    "category": "bag",
+    "wishlist": false,
+    "newarrivals": false,
+    "bestseller": false,
+    "related_products": ["b002"],
+    "images": [
+      "images/products/bag/b001_1.jpg",
+      "images/products/bag/b001_2.jpg",
+      "images/products/bag/b001_3.jpg",
+      "images/products/bag/b001_4.jpg",
+      "images/products/bag/b001_5.jpg",
+      "images/products/bag/b001_6.jpg"
+    ]
+  },
+  {
+    "id": "b002",
+    "title": "Women's Jada Solid Tote Bag With Laptop Compartment | Tote Bags for Women For Office Use, Work | Ladies Shoulder Purse",
+    "description": "Miraggio reshapes modern fashion with striking accessories that empower women. Whether you're into sleek minimalism or bold glam, our trend-forward bags add the perfect finishing touch to any outfit and occasion.",
+    "color": ["black", "beige"],
+    "size": false,
+    "price": 69.99,
+    "compare_price": 89.99,
+    "category": "bag",
+    "wishlist": false,
+    "newarrivals": true,
+    "bestseller": true,
+    "related_products": ["b001"],
+    "images": [
+      "images/products/bag/b002_1.jpg",
+      "images/products/bag/b002_2.jpg",
+      "images/products/bag/b002_3.jpg",
+      "images/products/bag/b002_4.jpg",
+      "images/products/bag/b002_5.jpg",
+      "images/products/bag/b002_6.jpg"
+    ]
+  }
+]

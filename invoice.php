@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Élantra</title>
+
+    <meta name="author" content="Chirayata Halder">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png">
+
+</head>
+
+<body class="wrapper-invoice">
+    <section class="invoice-section">
+        <div class="cus-container2">
+            <div class="top">
+                <button class="tf-btn btn-fill animate-hover-btn" onclick="printSection('box-invoice')">
+                    Print this invoice
+                </button>
+            </div>
+            <div class="box-invoice" id="box-invoice">
+                <div class="header">
+                    <div class="wrap-top">
+                        <div class="box-left">
+                            <a href="index.php">
+                                <img src="images/logo/logo.png" alt="logo" class="logo">
+                            </a>
+                        </div>
+                        <div class="box-right">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                <div class="title">Invoice #</div>
+                                <span class="code-num" id="invoice-order-id">--</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-date">
+                        <div class="box-left">
+                            <label for="">Invoice date:</label>
+                            <span class="date" id="invoice-date">--</span>
+                        </div>
+                    </div>
+                    <div class="wrap-info">
+                        <div class="box-left">
+                            <div class="title">Supplier</div>
+                            <div class="sub">Jobio LLC</div>
+                            <p class="desc">2301 Ravenswood Rd Madison,<br>WI 53711</p>
+                        </div>
+                        <div class="box-right">
+                            <div class="title">Customer</div>
+                            <div class="sub" id="invoice-name">--</div>
+                            <p class="desc" id="invoice-address">--</p>
+                        </div>
+                    </div>
+                    <div class="wrap-table-invoice">
+                        <table class="invoice-table">
+                            <thead>
+                                <tr class="title">
+                                    <th colspan="2">Description</th>
+                                    <th>Price</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="invoice-items">
+                                <!-- Filled by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="footer">
+                    <ul class="box-contact">
+                        <li>www.elantra.com</li>
+                        <li>contact@elantrafashion.com</li>
+                        <li>(212) 776-1122</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', async function () {
+            const order = JSON.parse(sessionStorage.getItem('orderData'));
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            if (!order || cart.length === 0) {
+                document.body.innerHTML = '<div class="container text-center pt-5"><h2>Session Expired</h2><p>No order data found.</p></div>';
+                return;
+            }
+
+            const res = await fetch('products.json');
+            const productsData = await res.json();
+
+            let totalDue = 0;
+            let invoiceHTML = '';
+
+            cart.forEach(item => {
+                const product = productsData.find(p => p.id === item.id);
+                if (!product) return;
+
+                const basePrice = product.price;
+                const qty = item.quantity || 1;
+                const total = (basePrice * qty).toFixed(2);
+                totalDue += parseFloat(total);
+
+                // Create a variant string (e.g., Color: Red, Size: M)
+                let variantDetails = '';
+                if (item.color) variantDetails += `Color: ${item.color} <br/>`;
+                if (item.size) variantDetails += `Size: ${item.size}`;
+
+                invoiceHTML += `
+        <tr class="content">
+            <td colspan="2">
+                <strong>${product.title}</strong><br>
+                <small>${variantDetails.trim()}</small><br>
+                <small>Qty: ${qty}</small>
+            </td>
+            <td>$${basePrice.toFixed(2)}</td>
+            <td>$${total}</td>
+        </tr>
+    `;
+            });
+
+
+            invoiceHTML += `
+        <tr class="content">
+            <td class="total" colspan="2">Total</td>
+            <td></td>
+            <td class="total">$${totalDue.toFixed(2)}</td>
+        `;
+
+            document.getElementById('invoice-order-id').textContent = order.orderId;
+            document.getElementById('invoice-date').textContent = order.orderDate;
+            document.getElementById('invoice-name').textContent = order.fullName;
+            document.getElementById('invoice-address').innerHTML = order.address.replace(/, /g, '<br>');
+
+            document.getElementById('invoice-items').innerHTML = invoiceHTML;
+
+            window.addEventListener('beforeunload', () => {
+                sessionStorage.removeItem('orderData');
+            });
+        });
+    </script>
+    <script>
+        function printSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (!section) return alert("Section not found!");
+
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(`
+        <html>
+        <head>
+            <link rel="stylesheet" type="text/css" href="css/styles.css" />
+            <style>
+                body { font-family: Arial, sans-serif; padding: 20px; }
+                img { max-width: 150px; }
+                table { border: 1px solid #ccc;width: 100%; border-collapse: collapse; margin-top: 20px; }
+                th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+                th { background-color: #f9f9f9; }
+                .title { font-weight: bold; }
+                .footer { margin-top: 40px; font-size: 14px; }
+                .wrap-top, .wrap-date, .wrap-info { margin-bottom: 20px; }
+            </style>
+
+        </head>
+        <body>
+            ${section.innerHTML}
+            <script>
+                window.onload = function () {
+                    window.print();
+                    window.onafterprint = function () { window.close(); };
+                }
+            <\/script>
+        </body>
+        </html>
+    `);
+            printWindow.document.close();
+        }
+    </script>
+
+
+</body>
+
+</html>

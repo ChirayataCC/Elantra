@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Men",
+    "category": "men",
+    "image": "images/collections/men/men.jpeg"
+  },
+  {
+    "title": "Women",
+    "category": "women",
+    "image": "images/collections/women/women.jpg"
+  },
+  {
+    "title": "Kids",
+    "category": "kids",
+    "image": "images/collections/kids/kids.jpg"
+  },
+  {
+    "title": "Sunglasses",
+    "category": "sunglasses",
+    "image": "images/collections/sunglasses/sunglasses.jpg"
+  },
+  {
+    "title": "Bag",
+    "category": "bag",
+    "image": "images/collections/bag/bag.jpg"
+  }
+]
