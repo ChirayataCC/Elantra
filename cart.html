@@ -799,6 +799,11 @@
 
         // Render cart items
         function renderCart() {
+            // Set default cart if none exists in localStorage
+    if (!localStorage.getItem('cart')) {
+        const defaultCart = [{"id":"w002","color":"black","size":"L","quantity":1}];
+        localStorage.setItem('cart', JSON.stringify(defaultCart));
+    }
             const cart = JSON.parse(localStorage.getItem('cart')) || [];
             cart.length === 0 ? document.querySelector(".tf-page-cart-item").classList.add("pe-none") : document.querySelector(".tf-page-cart-item").classList.add("pe-auto;");
             cartItemsContainer.innerHTML = '';
