@@ -848,13 +848,6 @@
             updateCartCount();
         }
 
-        
-            // Set default cart if none exists in localStorage
-    if (!localStorage.getItem('cart')) {
-        const defaultCart = [{"id":"w002","color":"black","size":"L","quantity":1}];
-        localStorage.setItem('cart', JSON.stringify(defaultCart));
-    }
-
         // Update cart count in header
         function updateCartCount() {
             const countBox = document.querySelector('.nav-cart .nav-icon-item .count-box');
