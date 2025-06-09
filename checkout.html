@@ -216,19 +216,6 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        // DEBUG: Set default cart only if empty or not present
-    if (!localStorage.getItem('cart') || localStorage.getItem('cart') === '[]') {
-        console.log('Initializing default cart...');
-        const defaultCart = [{
-            id: "w002",
-            color: "black",
-            size: "L",
-            quantity: 1
-        }];
-        localStorage.setItem('cart', JSON.stringify(defaultCart));
-    } else {
-        console.log('Cart already exists:', localStorage.getItem('cart'));
-    }
         const productListContainer = document.getElementById('checkoutProductList');
         const totalContainer = document.getElementById('checkoutTotal');
         const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
