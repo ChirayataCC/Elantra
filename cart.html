@@ -301,6 +301,15 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
+        if (!localStorage.getItem('cart')) {
+            const defaultCart = [{
+                id: "w002",
+                color: "black",
+                size: "L",
+                quantity: 1
+            }];
+            localStorage.setItem('cart', JSON.stringify(defaultCart));
+        }
         const cartTableBody = document.querySelector('.tf-table-page-cart tbody');
         const cartPageItem = document.querySelector('.tf-page-cart-item');
         const totalValueEl = document.querySelector('.total-value');
