@@ -4349,44 +4349,7 @@ header.header-bg {
   border-color: transparent !important;
 }
 
-.animate-hover-btn {
-  position: relative;
-  overflow: hidden;
-}
 
-.animate-hover-btn:after {
-  background-image: linear-gradient(
-    90deg,
-    transparent,
-    rgba(0, 0, 0, 0.25),
-    transparent
-  );
-  content: "";
-  left: 150%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  transform: skew(-20deg);
-  width: 200%;
-}
-
-.animate-hover-btn.btn-color-6:after,
-.animate-hover-btn.btn-color-5:after,
-.animate-hover-btn.btn-primary:after,
-.animate-hover-btn.btn-fill::after {
-  background-image: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.25),
-    transparent
-  );
-}
-
-@keyframes shine {
-  100% {
-    left: -200%;
-  }
-}
 .effect-flash {
   position: relative;
   overflow: hidden;
@@ -17427,9 +17390,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   }
   .tf-categories-wrap .tf-categories-container {
     overflow-x: auto;
-  }
-  .animate-hover-btn:hover:after {
-    animation: shine 0.75s cubic-bezier(0.01, 0.56, 1, 1);
   }
   .lg-px_40 {
     padding-left: 40px;
