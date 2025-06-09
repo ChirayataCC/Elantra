@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Élantra</title>
+
+    <meta name="author" content="Chirayata Halder">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css?v=<?= time() ?>" />
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header-default header-absolute">
+        <div class="px_15 lg-px_40">
+            <div class="row wrapper-header align-items-center">
+                <div class="col-md-4 col-3 tf-lg-hidden">
+                    <a href="#mobileMenu" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                            <path
+                                d="M2.00056 2.28571H16.8577C17.1608 2.28571 17.4515 2.16531 17.6658 1.95098C17.8802 1.73665 18.0006 1.44596 18.0006 1.14286C18.0006 0.839753 17.8802 0.549063 17.6658 0.334735C17.4515 0.120408 17.1608 0 16.8577 0H2.00056C1.69745 0 1.40676 0.120408 1.19244 0.334735C0.978109 0.549063 0.857702 0.839753 0.857702 1.14286C0.857702 1.44596 0.978109 1.73665 1.19244 1.95098C1.40676 2.16531 1.69745 2.28571 2.00056 2.28571ZM0.857702 8C0.857702 7.6969 0.978109 7.40621 1.19244 7.19188C1.40676 6.97755 1.69745 6.85714 2.00056 6.85714H22.572C22.8751 6.85714 23.1658 6.97755 23.3801 7.19188C23.5944 7.40621 23.7148 7.6969 23.7148 8C23.7148 8.30311 23.5944 8.59379 23.3801 8.80812C23.1658 9.02245 22.8751 9.14286 22.572 9.14286H2.00056C1.69745 9.14286 1.40676 9.02245 1.19244 8.80812C0.978109 8.59379 0.857702 8.30311 0.857702 8ZM0.857702 14.8571C0.857702 14.554 0.978109 14.2633 1.19244 14.049C1.40676 13.8347 1.69745 13.7143 2.00056 13.7143H12.2863C12.5894 13.7143 12.8801 13.8347 13.0944 14.049C13.3087 14.2633 13.4291 14.554 13.4291 14.8571C13.4291 15.1602 13.3087 15.4509 13.0944 15.6653C12.8801 15.8796 12.5894 16 12.2863 16H2.00056C1.69745 16 1.40676 15.8796 1.19244 15.6653C0.978109 15.4509 0.857702 15.1602 0.857702 14.8571Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-md-4 col-6">
+                    <a href="index.html" class="logo-header">
+                        <img src="images/logo/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="col-xl-6 tf-md-hidden">
+                    <nav class="box-navigation text-center">
+                        <ul class="box-nav-ul d-flex align-items-center justify-content-center gap-30">
+                            <li class="menu-item">
+                                <a href="newarrival.html" class="item-link">New Arrivals</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="bestseller.html" class="item-link">Best Sellers</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="collection.html" class="item-link">Collection</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="about-us.html" class="item-link">About Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="contact.html" class="item-link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xl-3 col-md-4 col-3">
+                    <ul class="nav-icon d-flex justify-content-end align-items-center gap-20">
+                        <li class="nav-wishlist"><a href="wishlist.html" class="nav-icon-item"><i
+                                    class="icon icon-heart"></i><span class="count-box">0</span></a></li>
+                        <li class="nav-cart"><a href="#shoppingCart" data-bs-toggle="modal" class="nav-icon-item"><i
+                                    class="icon icon-bag"></i><span class="count-box">0</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->
+
+<!-- page-title -->
+<div class="tf-page-title">
+    <div class="container-full">
+        <div class="heading text-center">Shopping Cart</div>
+    </div>
+</div>
+<!-- /page-title -->
+
+<!-- page-cart -->
+<section class="flat-spacing-11">
+    <div class="container">
+        <div class="tf-page-cart-wrap">
+            <div class="tf-page-cart-item">
+                <form>
+                    <table class="tf-table-page-cart">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tf-cart-item file-delete">
+                                <td class="tf-cart-item_product">
+                                    <a href="product-detail.html" class="img-box">
+                                        <img src="images/products/sunglasses/s002_2.jpg" alt="img-product">
+                                    </a>
+                                    <div class="cart-info">
+                                        <a href="product-detail.html" class="cart-title link">Oversized Printed
+                                            T-shirt</a>
+                                        <div class="cart-meta-variant">White / M</div>
+                                        <span class="remove-cart link remove">Remove</span>
+                                    </div>
+                                </td>
+                                <td class="tf-cart-item_price tf-variant-item-price" cart-data-title="Price">
+                                    <div class="cart-price price">$18.00</div>
+                                </td>
+                                <td class="tf-cart-item_quantity" cart-data-title="Quantity">
+                                    <div class="cart-quantity">
+                                        <div class="wg-quantity">
+                                            <span class="btn-quantity btndecrease">
+                                                <svg class="d-inline-block" width="9" height="1" viewBox="0 0 9 1"
+                                                    fill="currentColor">
+                                                    <path
+                                                        d="M9 1H5.14286H3.85714H0V1.50201e-05H3.85714L5.14286 0L9 1.50201e-05V1Z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <input type="text" name="number" value="1">
+                                            <span class="btn-quantity btnincrease">
+                                                <svg class="d-inline-block" width="9" height="9" viewBox="0 0 9 9"
+                                                    fill="currentColor">
+                                                    <path
+                                                        d="M9 5.14286H5.14286V9H3.85714V5.14286H0V3.85714H3.85714V0H5.14286V3.85714H9V5.14286Z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="tf-cart-item_total tf-variant-item-total" cart-data-title="Total">
+                                    <div class="cart-total price">$18.00</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="tf-page-cart-footer">
+                <div class="tf-cart-footer-inner">
+                    <div class="tf-page-cart-checkout">
+                        <div class="tf-cart-totals-discounts">
+                            <h3>Subtotal</h3>
+                            <span class="total-value">$18.00 USD</span>
+                        </div>
+                        <p class="tf-cart-tax">
+                            Taxes and <a href="javascript:void(0);">shipping</a> calculated at checkout
+                        </p>
+                        <div class="cart-checkout-btn">
+                            <a href="checkout.html"
+                                class="tf-btn w-100 btn-fill animate-hover-btn radius-3 justify-content-center">
+                                <span>Check out</span>
+                            </a>
+                        </div>
+                        <div class="tf-page-cart_imgtrust">
+                            <p class="text-center fw-6">Guarantee Safe Checkout</p>
+                            <div class="cart-list-social">
+                                <div class="payment-item">
+                                    <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38"
+                                        height="24" aria-labelledby="pi-visa">
+                                        <title id="pi-visa">Visa</title>
+                                        <path opacity=".07"
+                                            d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32">
+                                        </path>
+                                        <path
+                                            d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z"
+                                            fill="#142688"></path>
+                                    </svg>
+                                </div>
+                                <div class="payment-item">
+                                    <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24"
+                                        role="img" aria-labelledby="pi-paypal">
+                                        <title id="pi-paypal">PayPal</title>
+                                        <path opacity=".07"
+                                            d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32">
+                                        </path>
+                                        <path fill="#003087"
+                                            d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z">
+                                        </path>
+                                        <path fill="#3086C8"
+                                            d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z">
+                                        </path>
+                                        <path fill="#012169"
+                                            d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="payment-item">
+                                    <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38"
+                                        height="24" aria-labelledby="pi-master">
+                                        <title id="pi-master">Mastercard</title>
+                                        <path opacity=".07"
+                                            d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32">
+                                        </path>
+                                        <circle fill="#EB001B" cx="15" cy="12" r="7"></circle>
+                                        <circle fill="#F79E1B" cx="23" cy="12" r="7"></circle>
+                                        <path fill="#FF5F00"
+                                            d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="payment-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                        aria-labelledby="pi-american_express" viewBox="0 0 38 24" width="38"
+                                        height="24">
+                                        <title id="pi-american_express">American Express</title>
+                                        <path fill="#000"
+                                            d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3Z"
+                                            opacity=".07"></path>
+                                        <path fill="#006FCF"
+                                            d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32Z">
+                                        </path>
+                                        <path fill="#FFF"
+                                            d="M22.012 19.936v-8.421L37 11.528v2.326l-1.732 1.852L37 17.573v2.375h-2.766l-1.47-1.622-1.46 1.628-9.292-.02Z">
+                                        </path>
+                                        <path fill="#006FCF"
+                                            d="M23.013 19.012v-6.57h5.572v1.513h-3.768v1.028h3.678v1.488h-3.678v1.01h3.768v1.531h-5.572Z">
+                                        </path>
+                                        <path fill="#006FCF"
+                                            d="m28.557 19.012 3.083-3.289-3.083-3.282h2.386l1.884 2.083 1.89-2.082H37v.051l-3.017 3.23L37 18.92v.093h-2.307l-1.917-2.103-1.898 2.104h-2.321Z">
+                                        </path>
+                                        <path fill="#FFF"
+                                            d="M22.71 4.04h3.614l1.269 2.881V4.04h4.46l.77 2.159.771-2.159H37v8.421H19l3.71-8.421Z">
+                                        </path>
+                                        <path fill="#006FCF"
+                                            d="m23.395 4.955-2.916 6.566h2l.55-1.315h2.98l.55 1.315h2.05l-2.904-6.566h-2.31Zm.25 3.777.875-2.09.873 2.09h-1.748Z">
+                                        </path>
+                                        <path fill="#006FCF"
+                                            d="M28.581 11.52V4.953l2.811.01L32.84 9l1.456-4.046H37v6.565l-1.74.016v-4.51l-1.644 4.494h-1.59L30.35 7.01v4.51h-1.768Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="payment-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38"
+                                        height="24" aria-labelledby="pi-amazon">
+                                        <title id="pi-amazon">Amazon</title>
+                                        <path
+                                            d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
+                                            fill="#000" fill-rule="nonzero" opacity=".07"></path>
+                                        <path
+                                            d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
+                                            fill="#FFF" fill-rule="nonzero"></path>
+                                        <path
+                                            d="M25.26 16.23c-1.697 1.48-4.157 2.27-6.275 2.27-2.97 0-5.644-1.3-7.666-3.463-.16-.17-.018-.402.173-.27 2.183 1.504 4.882 2.408 7.67 2.408 1.88 0 3.95-.46 5.85-1.416.288-.145.53.222.248.47v.001zm.706-.957c-.216-.328-1.434-.155-1.98-.078-.167.024-.193-.148-.043-.27.97-.81 2.562-.576 2.748-.305.187.272-.047 2.16-.96 3.063-.14.138-.272.064-.21-.12.205-.604.664-1.96.446-2.29h-.001z"
+                                            fill="#F90" fill-rule="nonzero"></path>
+                                        <path
+                                            d="M21.814 15.291c-.574-.498-.676-.73-.993-1.205-.947 1.012-1.618 1.315-2.85 1.315-1.453 0-2.587-.938-2.587-2.818 0-1.467.762-2.467 1.844-2.955.94-.433 2.25-.51 3.25-.628v-.235c0-.43.033-.94-.208-1.31-.212-.333-.616-.47-.97-.47-.66 0-1.25.353-1.392 1.085-.03.163-.144.323-.3.33l-1.677-.187c-.14-.033-.296-.153-.257-.38.386-2.125 2.223-2.766 3.867-2.766.84 0 1.94.234 2.604.9.842.82.762 1.918.762 3.11v2.818c0 .847.335 1.22.65 1.676.113.164.138.36-.003.482-.353.308-.98.88-1.326 1.2a.367.367 0 0 1-.414.038zm-1.659-2.533c.34-.626.323-1.214.323-1.918v-.392c-1.25 0-2.57.28-2.57 1.82 0 .782.386 1.31 1.05 1.31.487 0 .922-.312 1.197-.82z"
+                                            fill="#221F1F"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- page-cart -->
+
+<!-- Testimonial -->
+<section class="flat-spacing-5 pt_0 flat-testimonial">
+    <div class="container">
+        <div class="flat-title wow fadeInUp" data-wow-delay="0s">
+            <span class="title">Happy Clients</span>
+            <p class="sub-title">Hear what they say about us</p>
+        </div>
+        <div class="wrap-carousel">
+            <div dir="ltr" class="swiper tf-sw-testimonial" data-preview="3" data-tablet="2" data-mobile="1"
+                data-space-lg="30" data-space-md="15">
+                <div class="swiper-wrapper" id="testimonial-wrapper"></div>
+            </div>
+
+            <div class="nav-sw nav-next-slider nav-next-testimonial lg"><span class="icon icon-arrow-left"></span></div>
+            <div class="nav-sw nav-prev-slider nav-prev-testimonial lg"><span class="icon icon-arrow-right"></span>
+            </div>
+            <div class="sw-dots style-2 sw-pagination-testimonial justify-content-center"></div>
+        </div>
+    </div>
+</section>
+<!-- /Testimonial -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const cartTableBody = document.querySelector('.tf-table-page-cart tbody');
+        const cartPageItem = document.querySelector('.tf-page-cart-item');
+        const totalValueEl = document.querySelector('.total-value');
+
+        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+        cartItems.length === 0 ? document.querySelector(".cart-checkout-btn a").classList.add("pe-none") : document.querySelector(".cart-checkout-btn a").classList.add("pe-auto;");
+
+        function renderCart(products) {
+            if (cartItems.length === 0) {
+                cartPageItem.innerHTML = `
+        <tr>
+          <td colspan="4" style="text-align: center; padding: 40px 0;">
+            <h4 class="mb-4">Your cart is empty</h4>
+            <a href="collection.html" class="tf-btn btn-fill">Continue Shopping</a>
+          </td>
+        </tr>
+      `;
+                totalValueEl.textContent = '$0.00 USD';
+                return;
+            }
+
+            cartTableBody.innerHTML = '';
+            let subtotal = 0;
+
+            cartItems.forEach(cartItem => {
+                const product = products.find(p => p.id === cartItem.id);
+                if (!product) return;
+
+                const itemTotal = product.price * cartItem.quantity;
+                subtotal += itemTotal;
+
+                const productImage = product.images?.[0] || 'images/placeholder.jpg';
+
+                const row = document.createElement('tr');
+                row.className = 'tf-cart-item file-delete';
+                row.innerHTML = `
+        <td class="tf-cart-item_product">
+          <a href="product-detail.html?id=${product.id}" class="img-box">
+            <img src="${productImage}" alt="${product.title}">
+          </a>
+          <div class="cart-info">
+            <a href="product-detail.html?id=${product.id}" class="cart-title link">${product.title}</a>
+            <div class="cart-meta-variant">
+              ${cartItem.color ? cartItem.color + ' / ' : ''}
+              ${cartItem.size || ''}
+            </div>
+            <span class="remove-cart link remove" data-id="${product.id}">Remove</span>
+          </div>
+        </td>
+        <td class="tf-cart-item_price tf-variant-item-price" cart-data-title="Price">
+          <div class="cart-price price">$${product.price.toFixed(2)}</div>
+        </td>
+        <td class="tf-cart-item_quantity" cart-data-title="Quantity">
+          <div class="cart-quantity">
+            <div class="wg-quantity">
+              <span class="btn-quantity btndecrease" data-id="${product.id}">
+                <svg class="d-inline-block" width="9" height="1" viewBox="0 0 9 1" fill="currentColor">
+                  <path d="M9 1H5.14286H3.85714H0V1.50201e-05H3.85714L5.14286 0L9 1.50201e-05V1Z"></path>
+                </svg>
+              </span>
+              <input type="text" name="number" value="${cartItem.quantity}" data-id="${product.id}" readonly>
+              <span class="btn-quantity btnincrease" data-id="${product.id}">
+                <svg class="d-inline-block" width="9" height="9" viewBox="0 0 9 9" fill="currentColor">
+                  <path d="M9 5.14286H5.14286V9H3.85714V5.14286H0V3.85714H3.85714V0H5.14286V3.85714H9V5.14286Z"></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </td>
+        <td class="tf-cart-item_total tf-variant-item-total" cart-data-title="Total">
+          <div class="cart-total price">$${itemTotal.toFixed(2)}</div>
+        </td>
+      `;
+
+                // Add event listeners directly
+                row.querySelector('.btndecrease').addEventListener('click', () => updateQuantity(product.id, -1, products));
+                row.querySelector('.btnincrease').addEventListener('click', () => updateQuantity(product.id, 1, products));
+                row.querySelector('.remove-cart').addEventListener('click', () => removeFromCart(product.id, products));
+
+                cartTableBody.appendChild(row);
+            });
+
+            totalValueEl.textContent = `$${subtotal.toFixed(2)} USD`;
+        }
+
+        function updateQuantity(productId, change, products) {
+            const itemIndex = cartItems.findIndex(item => item.id === productId);
+
+            if (itemIndex !== -1) {
+                cartItems[itemIndex].quantity += change;
+                if (cartItems[itemIndex].quantity <= 0) {
+                    cartItems.splice(itemIndex, 1);
+                }
+                localStorage.setItem('cart', JSON.stringify(cartItems));
+                renderCart(products);
+            }
+        }
+
+        function removeFromCart(productId, products) {
+            cartItems = cartItems.filter(item => item.id !== productId);
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+            renderCart(products);
+        }
+
+        // Initial fetch and render
+        fetch('products.json')
+            .then(response => response.json())
+            .then(products => renderCart(products))
+            .catch(error => {
+                console.error('Error loading products:', error);
+                cartTableBody.innerHTML = `
+        <tr>
+          <td colspan="4" style="text-align: center; padding: 40px 0; color: #f00;">
+            Error loading cart items. Please try again.
+          </td>
+        </tr>
+      `;
+            });
+    });
+</script>
+
+<!-- testimonial -->
+<script>
+    const testimonialURL = 'testimonials.json'; // Update these paths
+    const productURL = 'products.json';
+    const maxSlides = 10;
+
+    async function fetchData() {
+        const [testimonialRes, productRes] = await Promise.all([
+            fetch(testimonialURL),
+            fetch(productURL)
+        ]);
+
+        const testimonialsData = await testimonialRes.json();
+        const productsData = await productRes.json();
+        return { testimonialsData, productsData };
+    }
+
+    function getRandomTestimonials(testimonialsData, limit) {
+        const all = testimonialsData.flatMap(product =>
+            product.testimonials.map(t => ({ ...t, productId: product.id }))
+        );
+        for (let i = all.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [all[i], all[j]] = [all[j], all[i]];
+        }
+        return all.slice(0, limit);
+    }
+
+    function getProductById(productsData, productId) {
+        return productsData.find(p => p.id === productId);
+    }
+
+    function createTestimonialSlide(t, product) {
+        const imageUrl = product?.images?.[0] || 'images/default.jpg';
+        const starsHTML = '<i class="icon-star"></i>'.repeat(t.stars || 5);
+        const price = product?.price?.toFixed(2) || "N/A";
+        const productTitle = product?.title || "Product Name";
+
+        return `
+      <div class="swiper-slide">
+        <div class="testimonial-item style-column wow fadeInUp">
+          <div class="rating">${starsHTML}</div>
+          <div class="heading">${t.heading}</div>
+          <div class="text">“ ${t.text} ”</div>
+          <div class="author">
+            <div class="name">${t.fullname}</div>
+            <div class="metas">Verified Buyer</div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <a href="product-detail.html?id=${t.productId}">
+                <img class="lazyload" data-src="${imageUrl}" src="${imageUrl}" alt="${productTitle}">
+              </a>
+            </div>
+            <div class="content-wrap">
+              <div class="product-title">
+                <a href="product-detail.html?id=${t.productId}">${productTitle}</a>
+              </div>
+              <div class="price">$${price}</div>
+            </div>
+            <a href="product-detail.html?id=${t.productId}" class=""><i class="icon-arrow1-top-left"></i></a>
+          </div>
+        </div>
+      </div>
+    `;
+    }
+
+    fetchData().then(({ testimonialsData, productsData }) => {
+        const wrapper = document.getElementById('testimonial-wrapper');
+        const selectedTestimonials = getRandomTestimonials(testimonialsData, maxSlides);
+
+        selectedTestimonials.forEach(t => {
+            const product = getProductById(productsData, t.productId);
+            const slideHTML = createTestimonialSlide(t, product);
+            wrapper.insertAdjacentHTML('beforeend', slideHTML);
+        });
+
+        new Swiper('.tf-sw-testimonial', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            breakpoints: {
+                1024: { slidesPerView: 3 },
+                768: { slidesPerView: 2 },
+                320: { slidesPerView: 1 }
+            },
+            loop: true,
+            autoplay: {
+                delay: 5000
+            }
+        });
+    });
+</script>
+<!-- /testimonial -->
+
+<!-- Footer -->
+<footer id="footer" class="footer md-pb-70">
+    <div class="footer-wrap">
+        <div class="footer-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="footer-infor">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                    <img src="images/logo/logo.png" alt="">
+                                </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>Address: 350 5th Avenue, 59th Floor,
+                                        <br />New York, NY 10118
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Email: <a href="mailto:contact@elantrafashion.com">contact@elantrafashion.com</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Phone: <a href="tel:2127761122">(212) 776-1122</a></p>
+                                </li>
+                            </ul>
+                            <ul class="tf-social-icon d-flex gap-10">
+                                <li><a href="javascript:void(0);"
+                                        class="box-icon w_34 round social-facebook social-line"><i
+                                            class="icon fs-14 icon-fb"></i></a></li>
+                                <li><a href="javascript:void(0);"
+                                        class="box-icon w_34 round social-twiter social-line"><i
+                                            class="icon fs-12 icon-Icon-x"></i></a></li>
+                                <li><a href="javascript:void(0);"
+                                        class="box-icon w_34 round social-instagram social-line"><i
+                                            class="icon fs-14 icon-instagram"></i></a></li>
+                                <li><a href="javascript:void(0);"
+                                        class="box-icon w_34 round social-tiktok social-line"><i
+                                            class="icon fs-14 icon-tiktok"></i></a></li>
+                                <li><a href="javascript:void(0);"
+                                        class="box-icon w_34 round social-pinterest social-line"><i
+                                            class="icon fs-14 icon-pinterest-1"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12 footer-col-block">
+                        <div class="footer-heading footer-heading-desktop">
+                            <h6>Help</h6>
+                        </div>
+                        <div class="footer-heading footer-heading-moblie">
+                            <h6>Help</h6>
+                        </div>
+                        <ul class="footer-menu-list tf-collapse-content">
+                            <li>
+                                <a href="javascript:void(0);" class="footer-menu_item">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="footer-menu_item"> Return Policy</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="footer-menu_item">Shipping Policy</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="footer-menu_item">Terms &amp;
+                                    Conditions</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="footer-menu_item">FAQ’s</a>
+                            <li>
+                                <a href="wishlist.html" class="footer-menu_item">My Wishlist</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12 footer-col-block">
+                        <div class="footer-heading footer-heading-desktop">
+                            <h6>About us</h6>
+                        </div>
+                        <div class="footer-heading footer-heading-moblie">
+                            <h6>About us</h6>
+                        </div>
+                        <ul class="footer-menu-list tf-collapse-content">
+                            <li>
+                                <a href="about-us.html" class="footer-menu_item">Our Story</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="footer-menu_item">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="footer-newsletter footer-col-block">
+                            <div class="footer-heading footer-heading-desktop">
+                                <h6>Sign Up for Email</h6>
+                            </div>
+                            <div class="footer-heading footer-heading-moblie">
+                                <h6>Sign Up for Email</h6>
+                            </div>
+                            <div class="tf-collapse-content">
+                                <div class="footer-menu_item">Subscribe to be the first to know about new arrivals, special offers, exclusive content, events, and more!</div>
+                                <form class="form-newsletter subscribe-form">
+                                    <div class="subscribe-content">
+                                        <fieldset class="email">
+                                            <input type="email" name="email-form" class="subscribe-email"
+                                                placeholder="Enter your email....">
+                                        </fieldset>
+                                        <div class="button-submit">
+                                            <button
+                                                class="subscribe-button tf-btn btn-sm radius-3 btn-fill btn-icon animate-hover-btn"
+                                                type="button">Subscribe<i
+                                                    class="icon icon-arrow1-top-left"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="subscribe-msg"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div
+                            class="footer-bottom-wrap d-flex gap-20 flex-wrap justify-content-between align-items-center">
+                            <div class="footer-menu_item">&copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> Élantra Store. All Rights Reserved
+                            </div>
+                            <div class="tf-payment">
+                                <img src="images/payments/visa.png" alt="">
+                                <img src="images/payments/img-1.png" alt="">
+                                <img src="images/payments/img-2.png" alt="">
+                                <img src="images/payments/img-3.png" alt="">
+                                <img src="images/payments/img-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /Footer -->
+
+</div>
+
+
+
+<!-- gotop -->
+<button id="goTop" class="bounce-forever">
+    <span class="icon icon-arrow-up"></span>
+</button>
+<!-- /gotop -->
+
+<!-- mobile menu -->
+<div class="offcanvas offcanvas-start canvas-mb" id="mobileMenu">
+    <span class="icon-close icon-close-popup" data-bs-dismiss="offcanvas" aria-label="Close"></span>
+    <div class="mb-canvas-content">
+        <div class="mb-body">
+            <ul class="nav-ul-mb" id="wrapper-menu-navigation">
+                <li class="nav-mb-item">
+                    <a href="newarrival.html" class="mb-menu-link current">
+                        <span>New Arrivals</span>
+                    </a>
+                </li>
+                <li class="nav-mb-item">
+                    <a href="bestseller.html" class="mb-menu-link current">
+                        <span>Best Sellers</span>
+                    </a>
+                </li>
+                <li class="nav-mb-item">
+                    <a href="collection.html" class="mb-menu-link current">
+                        <span>Collection</span>
+                    </a>
+                </li>
+                <li class="nav-mb-item">
+                    <a href="about-us.html" class="mb-menu-link current">
+                        <span>About Us</span>
+                    </a>
+                </li>
+                <li class="nav-mb-item">
+                    <a href="contact.html" class="mb-menu-link current">
+                        <span>Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="mb-other-content">
+                <div class="d-flex group-icon">
+                    <a href="wishlist.html" class="site-nav-icon"><i class="icon icon-heart"></i>Wishlist</a>
+                </div>
+                <ul class="mb-info">
+                    <li>Address: 350 5th Avenue, 59th Floor, New York, NY 10118</li>
+                    <li>Email: <b>contact@elantrafashion.com</b></li>
+                    <li>Phone: <b>(212) 776-1122</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /mobile menu -->
+
+
+<!-- shoppingCart -->
+<div class="modal fullRight fade modal-shopping-cart" id="shoppingCart">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="header">
+                <div class="title fw-5">Shopping cart</div>
+                <span class="btn icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+            </div>
+            <div class="wrap">
+                <div class="tf-mini-cart-wrap">
+                    <div class="tf-mini-cart-main">
+                        <div class="tf-mini-cart-sroll">
+                            <div class="tf-mini-cart-items">
+                                <div class="tf-mini-cart-item">
+                                    <div class="tf-mini-cart-image">
+                                        <a href="product-detail.html">
+                                            <img src="images/products/sunglasses/s002_2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="tf-mini-cart-info">
+                                        <a class="title link" href="product-detail.html">T-shirt</a>
+                                        <div class="meta-variant">Light gray</div>
+                                        <div class="price fw-6">$25.00</div>
+                                        <div class="tf-mini-cart-btns">
+                                            <div class="wg-quantity small">
+                                                <span class="btn-quantity minus-btn">-</span>
+                                                <input type="text" name="number" value="1">
+                                                <span class="btn-quantity plus-btn">+</span>
+                                            </div>
+                                            <div class="tf-mini-cart-remove">Remove</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tf-mini-cart-bottom">
+                        <div class="tf-mini-cart-bottom-wrap">
+                            <div class="tf-cart-totals-discounts">
+                                <div class="tf-cart-total">Subtotal</div>
+                                <div class="tf-totals-total-value fw-6">$49.99 USD</div>
+                            </div>
+                            <div class="tf-cart-tax">Taxes and <a href="javascript:void(0);">shipping</a> calculated at
+                                checkout</div>
+                            <div class="tf-mini-cart-view-checkout">
+                                <a href="cart.html"
+                                    class="tf-btn btn-outline radius-3 link w-100 justify-content-center">View
+                                    cart</a>
+                                <a href="checkout.html"
+                                    class="tf-btn btn-fill animate-hover-btn radius-3 w-100 justify-content-center tf-page-cart-item"><span>Check
+                                        out</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cartModal = document.querySelector('#shoppingCart');
+        const cartItemsContainer = cartModal.querySelector('.tf-mini-cart-items');
+        const subtotalEl = cartModal.querySelector('.tf-totals-total-value');
+        let products = [];
+
+        // Load products from JSON
+        fetch('products.json')
+            .then(res => res.json())
+            .then(data => { products = data; });
+
+        // Utility to format price
+        const formatPrice = price => `$${price.toFixed(2)}`;
+
+        // Render cart items
+        function renderCart() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.length === 0 ? document.querySelector(".tf-page-cart-item").classList.add("pe-none") : document.querySelector(".tf-page-cart-item").classList.add("pe-auto;");
+            cartItemsContainer.innerHTML = '';
+            let subtotal = 0;
+
+            cart.forEach((item, index) => {
+                const product = products.find(p => p.id === item.id);
+                if (!product) return;
+
+                const totalPrice = product.price * item.quantity;
+                subtotal += totalPrice;
+
+                const div = document.createElement('div');
+                div.className = 'tf-mini-cart-item';
+                div.dataset.index = index;
+
+                div.innerHTML = `
+                <div class="tf-mini-cart-image">
+                    <a href="product-detail.html?id=${product.id}">
+                        <img src="${product.images?.[0] || 'images/no-image.jpg'}" alt="${product.title}">
+                    </a>
+                </div>
+                <div class="tf-mini-cart-info">
+                    <a class="title link" href="product-detail.html?id=${product.id}">${product.title}</a>
+                    <div class="meta-variant">${item.color || ''} ${item.size ? `- ${item.size}` : ''}</div>
+                    <div class="price fw-6">${formatPrice(totalPrice)}</div>
+                    <div class="tf-mini-cart-btns">
+                        <div class="wg-quantity small">
+                            <span class="btn-quantity minus-btn">-</span>
+                            <input type="text" value="${item.quantity}" readonly>
+                            <span class="btn-quantity plus-btn">+</span>
+                        </div>
+                        <div class="btn tf-mini-cart-remove">Remove</div>
+                    </div>
+                </div>
+            `;
+                cartItemsContainer.appendChild(div);
+            });
+
+            subtotalEl.textContent = formatPrice(subtotal);
+        }
+
+        // Update localStorage and re-render cart
+        function updateCart(cart) {
+            localStorage.setItem('cart', JSON.stringify(cart));
+            renderCart();
+            updateCartCount();
+        }
+
+        // Update cart count in header
+        function updateCartCount() {
+            const countBox = document.querySelector('.nav-cart .nav-icon-item .count-box');
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+            if (countBox) countBox.textContent = count;
+        }
+
+        // Event listeners for cart modal interactions
+        cartItemsContainer.addEventListener('click', (e) => {
+            const itemEl = e.target.closest('.tf-mini-cart-item');
+            if (!itemEl) return;
+            const index = +itemEl.dataset.index;
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Quantity increase
+            if (e.target.classList.contains('plus-btn')) {
+                cart[index].quantity += 1;
+                updateCart(cart);
+            }
+
+            // Quantity decrease
+            if (e.target.classList.contains('minus-btn')) {
+                if (cart[index].quantity > 1) {
+                    cart[index].quantity -= 1;
+                    updateCart(cart);
+                }
+            }
+
+            // Remove item
+            if (e.target.classList.contains('tf-mini-cart-remove')) {
+                cart.splice(index, 1);
+                updateCart(cart);
+            }
+        });
+
+        // Re-render cart every time modal opens
+        const shoppingCartModal = document.querySelector('#shoppingCart');
+        shoppingCartModal.addEventListener('show.bs.modal', renderCart);
+
+        // Initialize count on load
+        updateCartCount();
+    });
+</script>
+
+<!-- /shoppingCart -->
+
+
+<!-- modal quick_add -->
+<div class="modal fade modalDemo popup-quickadd" id="quick_add">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- <div class="header">
+                <span class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+            </div> -->
+            <div class="wrap">
+                <div class="tf-product-info-item">
+                    <div class="image">
+                        <img src="images/products/sunglasses/s002_2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="product-detail.html">Ribbed Tank Top</a>
+                        <div class="tf-product-info-price">
+                            <!-- <div class="price-on-sale">$8.00</div>
+                                <div class="compare-at-price">$10.00</div>
+                                <div class="badges-on-sale"><span>20</span>% OFF</div> -->
+                            <div class="price">$18.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tf-product-info-variant-picker mb_15">
+                    <div class="variant-picker-item colorPicker">
+                        <div class="variant-picker-label">
+                            Color: <span class="fw-6 variant-picker-label-value">Orange</span>
+                        </div>
+                        <div class="variant-picker-values">
+                            <input id="values-orange" type="radio" name="color" checked>
+                            <label class="hover-tooltip radius-60" for="values-orange" data-value="Orange">
+                                <span class="btn-checkbox bg-color-orange"></span>
+                                <span class="tooltip">Orange</span>
+                            </label>
+                            <input id="values-black" type="radio" name="color">
+                            <label class=" hover-tooltip radius-60" for="values-black" data-value="Black">
+                                <span class="btn-checkbox bg-color-black"></span>
+                                <span class="tooltip">Black</span>
+                            </label>
+                            <input id="values-white" type="radio" name="color">
+                            <label class="hover-tooltip radius-60" for="values-white" data-value="White">
+                                <span class="btn-checkbox bg-color-white"></span>
+                                <span class="tooltip">White</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="variant-picker-item sizePicker">
+                        <div class="variant-picker-label">
+                            Size: <span class="fw-6 variant-picker-label-value">S</span>
+                        </div>
+                        <div class="variant-picker-values">
+                            <input type="radio" name="size" id="values-s" checked>
+                            <label class="style-text" for="values-s" data-value="S">
+                                <p>S</p>
+                            </label>
+                            <input type="radio" name="size" id="values-m">
+                            <label class="style-text" for="values-m" data-value="M">
+                                <p>M</p>
+                            </label>
+                            <input type="radio" name="size" id="values-l">
+                            <label class="style-text" for="values-l" data-value="L">
+                                <p>L</p>
+                            </label>
+                            <input type="radio" name="size" id="values-xl">
+                            <label class="style-text" for="values-xl" data-value="XL">
+                                <p>XL</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="tf-product-info-quantity mb_15">
+                    <div class="quantity-title fw-6">Quantity</div>
+                    <div class="wg-quantity">
+                        <span class="btn-quantity minus-btn">-</span>
+                        <input type="text" name="number" value="1">
+                        <span class="btn-quantity plus-btn">+</span>
+                    </div>
+                </div>
+                <div class="tf-product-info-buy-button">
+                    <form>
+                        <a
+                            class="tf-btn btn-fill justify-content-center fw-6 fs-16 flex-grow-1 animate-hover-btn btn-add-to-cart"><span>Add
+                                to cart</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let products = [];
+
+        // Fetch product data from JSON
+        fetch('products.json')
+            .then(res => res.json())
+            .then(data => { products = data; });
+
+        // Quick Add modal handler
+        document.addEventListener('click', (e) => {
+            const btn = e.target.closest('.quick-add');
+            if (!btn) return;
+
+            const productId = btn.dataset.productId;
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            const modal = document.querySelector('#quick_add');
+            const addToCartBtn = modal.querySelector('.btn-add-to-cart');
+
+            // Set base data attributes
+            addToCartBtn.setAttribute('data-product-id', product.id);
+            addToCartBtn.setAttribute('data-quantity', '1'); // default quantity
+
+            // Image, title, link, price
+            modal.querySelector('.tf-product-info-item .image img').src = product.images?.[0] || '';
+            modal.querySelector('.tf-product-info-item .content a').textContent = product.title;
+            modal.querySelector('.tf-product-info-item .content a').href = `product-detail.html?id=${product.id}`;
+            modal.querySelector('.tf-product-info-price .price').textContent = `$${product.price.toFixed(2)}`;
+            addToCartBtn.innerHTML = `<span>Add to cart</span>`;
+
+            // === COLOR ===
+            const colorSection = modal.querySelector('.colorPicker');
+            const colorWrapper = colorSection?.querySelector('.variant-picker-values');
+            const colorLabelValue = colorSection?.querySelector('.variant-picker-label-value');
+            if (Array.isArray(product.color) && product.color.length > 0) {
+                colorSection.style.display = 'block';
+                colorWrapper.innerHTML = product.color.map((color, i) => `
+                    <input id="values-${color.toLowerCase()}" type="radio" name="color" ${i === 0 ? 'checked' : ''}>
+                    <label class="hover-tooltip radius-60" for="values-${color.toLowerCase()}" data-value="${color}">
+                        <span class="btn-checkbox" style="background:${color.toLowerCase()}"></span>
+                        <span class="tooltip">${color}</span>
+                    </label>
+                `).join('');
+                addToCartBtn.setAttribute('data-color', product.color[0]);
+                if (colorLabelValue) colorLabelValue.textContent = product.color[0];
+            } else {
+                colorSection.style.display = 'none';
+                addToCartBtn.removeAttribute('data-color');
+            }
+
+            // === SIZE ===
+            const sizeSection = modal.querySelector('.sizePicker');
+            const sizeWrapper = sizeSection?.querySelector('.variant-picker-values');
+            const sizeLabelValue = sizeSection?.querySelector('.variant-picker-label-value');
+            if (Array.isArray(product.size) && product.size.length > 0) {
+                sizeSection.style.display = 'block';
+                sizeWrapper.innerHTML = product.size.map((size, i) => `
+                    <input type="radio" name="size" id="values-${size}" ${i === 0 ? 'checked' : ''}>
+                    <label class="style-text" for="values-${size}" data-value="${size}">
+                        <p>${size}</p>
+                    </label>
+                `).join('');
+                addToCartBtn.setAttribute('data-size', product.size[0]);
+                if (sizeLabelValue) sizeLabelValue.textContent = product.size[0];
+            } else {
+                sizeSection.style.display = 'none';
+                addToCartBtn.removeAttribute('data-size');
+            }
+
+            // Reset quantity input to 1
+            const quantityInput = modal.querySelector('.wg-quantity input[name="number"]');
+            if (quantityInput) {
+                quantityInput.value = '1';
+                addToCartBtn.setAttribute('data-quantity', '1');
+            }
+
+            // Show modal
+            new bootstrap.Modal(modal).show();
+        });
+
+        // Handle color/size/quantity changes
+        document.addEventListener('change', (e) => {
+            const modal = document.querySelector('#quick_add');
+            const addToCartBtn = modal.querySelector('.btn-add-to-cart');
+            if (!addToCartBtn) return;
+
+            // Color
+            if (e.target.name === 'color') {
+                const selectedLabel = modal.querySelector('input[name="color"]:checked + label');
+                const selectedColor = selectedLabel?.dataset.value;
+                if (selectedColor) {
+                    addToCartBtn.setAttribute('data-color', selectedColor);
+                    const colorLabelValue = modal.querySelector('.colorPicker .variant-picker-label-value');
+                    if (colorLabelValue) colorLabelValue.textContent = selectedColor;
+                }
+            }
+
+            // Size
+            if (e.target.name === 'size') {
+                const selectedLabel = modal.querySelector('input[name="size"]:checked + label');
+                const selectedSize = selectedLabel?.dataset.value;
+                if (selectedSize) {
+                    addToCartBtn.setAttribute('data-size', selectedSize);
+                    const sizeLabelValue = modal.querySelector('.sizePicker .variant-picker-label-value');
+                    if (sizeLabelValue) sizeLabelValue.textContent = selectedSize;
+                }
+            }
+
+            // Manual quantity input
+            if (e.target.name === 'number') {
+                const qty = parseInt(e.target.value);
+                if (!isNaN(qty) && qty > 0) {
+                    addToCartBtn.setAttribute('data-quantity', qty);
+                }
+            }
+        });
+
+        // Handle plus/minus buttons for quantity
+        document.addEventListener('click', (e) => {
+            const btn = e.target.closest('.btn-quantity');
+            if (!btn) return;
+
+            const modal = document.querySelector('#quick_add');
+            const quantityInput = modal.querySelector('.wg-quantity input[name="number"]');
+            const addToCartBtn = modal.querySelector('.btn-add-to-cart');
+            if (!quantityInput || !addToCartBtn) return;
+
+            let qty = parseInt(quantityInput.value) || 1;
+
+            if (btn.classList.contains('plus-btn')) {
+                qty += 1;
+            } else if (btn.classList.contains('minus-btn')) {
+                qty = Math.max(1, qty - 1);
+            }
+
+            quantityInput.value = qty;
+            addToCartBtn.setAttribute('data-quantity', qty);
+        });
+    });
+</script>
+
+<!--<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let products = [];
+
+        // Fetch product data from JSON
+        fetch('products.json')
+            .then(res => res.json())
+            .then(data => { products = data; });
+
+        // Quick Add modal handler
+        document.addEventListener('click', (e) => {
+            const btn = e.target.closest('.quick-add');
+            if (!btn) return;
+
+            const productId = btn.dataset.productId;
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            const modal = document.querySelector('#quick_add');
+            const addToCartBtn = modal.querySelector('.btn-add-to-cart');
+
+            // Set base data attributes
+            addToCartBtn.setAttribute('data-product-id', product.id);
+            addToCartBtn.setAttribute('data-quantity', '1'); // default quantity
+
+            // Image, title, link, price
+            modal.querySelector('.tf-product-info-item .image img').src = product.images?.[0] || '';
+            modal.querySelector('.tf-product-info-item .content a').textContent = product.title;
+            modal.querySelector('.tf-product-info-item .content a').href = `product-detail.html?id=${product.id}`;
+            modal.querySelector('.tf-product-info-price .price').textContent = `$${product.price.toFixed(2)}`;
+            addToCartBtn.innerHTML = `<span>Add to cart</span>`;
+
+            // === COLOR ===
+            const colorSection = modal.querySelector('.colorPicker');
+            const colorWrapper = colorSection?.querySelector('.variant-picker-values');
+            if (Array.isArray(product.color) && product.color.length > 0) {
+                colorSection.style.display = 'block';
+                colorWrapper.innerHTML = product.color.map((color, i) => `
+                    <input id="values-${color.toLowerCase()}" type="radio" name="color" ${i === 0 ? 'checked' : ''}>
+                    <label class="hover-tooltip radius-60" for="values-${color.toLowerCase()}" data-value="${color}">
+                        <span class="btn-checkbox" style="background:${color.toLowerCase()}"></span>
+                        <span class="tooltip">${color}</span>
+                    </label>
+                `).join('');
+                addToCartBtn.setAttribute('data-color', product.color[0]);
+            } else {
+                colorSection.style.display = 'none';
+                addToCartBtn.removeAttribute('data-color');
+            }
+
+            // === SIZE ===
+            const sizeSection = modal.querySelector('.sizePicker');
+            const sizeWrapper = sizeSection?.querySelector('.variant-picker-values');
+            if (Array.isArray(product.size) && product.size.length > 0) {
+                sizeSection.style.display = 'block';
+                sizeWrapper.innerHTML = product.size.map((size, i) => `
+                    <input type="radio" name="size" id="values-${size}" ${i === 0 ? 'checked' : ''}>
+                    <label class="style-text" for="values-${size}" data-value="${size}">
+                        <p>${size}</p>
+                    </label>
+                `).join('');
+                addToCartBtn.setAttribute('data-size', product.size[0]);
+            } else {
+                sizeSection.style.display = 'none';
+                addToCartBtn.removeAttribute('data-size');
+            }
+
+            // Reset quantity input to 1
+            const quantityInput = modal.querySelector('.wg-quantity input[name="number"]');
+            if (quantityInput) {
+                quantityInput.value = '1';
+                addToCartBtn.setAttribute('data-quantity', '1');
+            }
+
+            // Show modal
+            new bootstrap.Modal(modal).show();
+        });
+
+        // Handle color/size/quantity changes
+        document.addEventListener('change', (e) => {
+            const modal = document.querySelector('#quick_add');
+            const addToCartBtn = modal.querySelector('.btn-add-to-cart');
+            if (!addToCartBtn) return;
+
+            // Color
+            if (e.target.name === 'color') {
+                const selectedLabel = modal.querySelector('input[name="color"]:checked + label');
+                const selectedColor = selectedLabel?.dataset.value;
+                if (selectedColor) {
+                    addToCartBtn.setAttribute('data-color', selectedColor);
+                }
+            }
+
+            // Size
+            if (e.target.name === 'size') {
+                const selectedLabel = modal.querySelector('input[name="size"]:checked + label');
+                const selectedSize = selectedLabel?.dataset.value;
+                if (selectedSize) {
+                    addToCartBtn.setAttribute('data-size', selectedSize);
+                }
+            }
+
+            // Manual input in quantity
+            if (e.target.name === 'number') {
+                const qty = parseInt(e.target.value);
+                if (!isNaN(qty) && qty > 0) {
+                    addToCartBtn.setAttribute('data-quantity', qty);
+                }
+            }
+        });
+
+        // Handle plus/minus buttons in quantity
+        document.addEventListener('click', (e) => {
+            const btn = e.target.closest('.btn-quantity');
+            if (!btn) return;
+
+            const modal = document.querySelector('#quick_add');
+            const quantityInput = modal.querySelector('.wg-quantity input[name="number"]');
+            const addToCartBtn = modal.querySelector('.btn-add-to-cart');
+            if (!quantityInput || !addToCartBtn) return;
+
+            let qty = parseInt(quantityInput.value) || 1;
+
+            if (btn.classList.contains('plus-btn')) {
+                qty += 1;
+            } else if (btn.classList.contains('minus-btn')) {
+                qty = Math.max(1, qty - 1);
+            }
+
+            quantityInput.value = qty;
+            addToCartBtn.setAttribute('data-quantity', qty);
+        });
+    });
+</script>-->
+<!-- /modal quick_add -->
+
+
+<!-- wishlist count -->
+<script>
+    function updateWishlistCount() {
+        const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+        const countBox = document.querySelector('.nav-icon-item .count-box');
+        if (countBox) {
+            countBox.textContent = wishlist.length;
+        }
+    }
+
+</script>
+<!-- wishlist count -->
+
+<!-- add to wishlist -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+        function updateWishlistCount() {
+            const countBox = document.querySelector('.nav-icon-item .count-box');
+            if (countBox) {
+                countBox.textContent = wishlist.length;
+            }
+        }
+
+        // Delegate click listener for dynamic content
+        document.addEventListener('click', function (e) {
+            const btn = e.target.closest('.wishlist-btn');
+            if (!btn) return;
+
+            const productId = btn.dataset.productId;
+            if (!productId) return;
+
+            const index = wishlist.indexOf(productId);
+            if (index > -1) {
+                wishlist.splice(index, 1);
+                btn.classList.remove('active');
+            } else {
+                wishlist.push(productId);
+                btn.classList.add('active');
+            }
+
+            localStorage.setItem('wishlist', JSON.stringify(wishlist));
+            updateWishlistCount(); // ✅ Update count on each change
+        });
+
+        // Set button active states on page load
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            const productId = btn.dataset.productId;
+            if (wishlist.includes(productId)) {
+                btn.classList.add('active');
+            }
+        });
+
+        updateWishlistCount(); // ✅ Initial count setup
+    });
+
+</script>
+<!-- /add to wishlist -->
+
+<!-- add to cart -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Retrieve or initialize cart array from localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Update the cart count badge in the header
+        function updateCartCount() {
+            const countBox = document.querySelector('.nav-cart .nav-icon-item .count-box');
+            if (countBox) {
+                countBox.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
+            }
+        }
+
+        // Handle add-to-cart clicks
+        document.addEventListener('click', function (e) {
+            const btn = e.target.closest('.btn-add-to-cart');
+            if (!btn) return;
+
+            const productId = btn.getAttribute('data-product-id');
+            const color = btn.getAttribute('data-color');
+            const size = btn.getAttribute('data-size');
+            const quantity = parseInt(btn.getAttribute('data-quantity')) || 1;
+
+            if (!productId) return;
+
+            // Check if the exact same product (same ID, color, size) is already in cart
+            const existingItem = cart.find(item =>
+                item.id === productId &&
+                item.color === color &&
+                item.size === size
+            );
+
+            if (existingItem) {
+                // Update quantity
+                existingItem.quantity += quantity;
+            } else {
+                // Add new item
+                cart.push({
+                    id: productId,
+                    color: color,
+                    size: size,
+                    quantity: quantity
+                });
+            }
+
+            // Save updated cart and update count
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+
+            // Open the cart modal
+            const cartModalEl = document.getElementById('shoppingCart');
+            if (cartModalEl) {
+                const cartModal = new bootstrap.Modal(cartModalEl);
+                cartModal.show();
+            }
+        });
+
+        // Initialize cart count on page load
+        updateCartCount();
+    });
+</script>
+<!-- add to cart -->
+
+
+<!-- Javascript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/lazysize.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/multiple-modal.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
