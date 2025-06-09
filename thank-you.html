@@ -136,6 +136,36 @@
 </section>
 <!-- page-cart -->
 
+    <script>
+// Set default orderData in sessionStorage if not already set
+if (!sessionStorage.getItem('orderData')) {
+    const defaultOrder = {
+        orderId: "ORD-1749464871164",
+        orderDate: "6/9/2025, 3:57:51 PM",
+        fullName: "test test",
+        email: "test@test.com",
+        phone: "05555555555",
+        address: "test, test, United Kingdom",
+        paymentMethod: "Cash on Delivery",
+        products: [
+            {
+                id: "w002",
+                title: "Women's Rayon Viscose Anarkali Printed Kurta with Palazzo & Dupatta",
+                price: 39.99,
+                quantity: 1,
+                color: "black",
+                size: "L",
+                image: "images/products/women/w002_1.jpg",
+                subtotal: 39.99
+            }
+        ],
+        totalAmount: 39.99
+    };
+
+    sessionStorage.setItem('orderData', JSON.stringify(defaultOrder));
+}
+</script>
+
 <script>
     document.addEventListener('DOMContentLoaded', async function () {
         const order = JSON.parse(sessionStorage.getItem('orderData'));
